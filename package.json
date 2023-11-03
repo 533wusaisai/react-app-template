@@ -1,0 +1,54 @@
+{
+  "name": "vite-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "vite --mode development",
+    "start:test": "vite --mode testing",
+    "start:staging": "vite --mode staging",
+    "start:prod": "vite --mode production",
+    "build:dev": "tsc --noEmit && vite build  --mode development",
+    "build:test": "tsc --noEmit && vite build  --mode testing",
+    "build:staging": "tsc --noEmit && vite build  --mode staging",
+    "build:prod": "tsc --noEmit && vite build --mode production",
+    "tsc": "tsc --noEmit",
+    "prepare": "husky install",
+    "commit": "git-cz",
+    "release": "standard-version"
+  },
+  "author": "",
+  "license": "ISC",
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.10",
+    "@types/react": "^18.2.34",
+    "@types/react-dom": "^18.2.14",
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
+    "@typescript-eslint/parser": "^6.9.1",
+    "@vitejs/plugin-react": "^4.1.1",
+    "cz-git": "^1.7.1",
+    "eslint": "^8.52.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.0.2",
+    "prettier": "^3.0.3",
+    "sass": "^1.69.5",
+    "standard-version": "^9.5.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.5.0",
+    "vite-plugin-eslint": "^1.8.1"
+  }
+}
