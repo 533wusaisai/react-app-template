@@ -1,4 +1,0 @@
-{
-    "*.{js,jsx}": ["eslint --fix"],
-    "*.{ts,tsx}": ["eslint --fix", "bash -c tsc"]
-  }

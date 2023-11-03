@@ -12,6 +12,7 @@
     "build:test": "tsc --noEmit && vite build  --mode testing",
     "build:staging": "tsc --noEmit && vite build  --mode staging",
     "build:prod": "tsc --noEmit && vite build --mode production",
+    "prettier": "prettier --write ./src",
     "tsc": "tsc --noEmit",
     "prepare": "husky install",
     "commit": "git-cz",
@@ -19,11 +20,6 @@
   },
   "author": "",
   "license": "ISC",
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-git"
-    }
-  },
   "dependencies": {
     "axios": "^1.6.0",
     "react": "^18.2.0",
