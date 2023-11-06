@@ -1,12 +1,11 @@
-import React from "react";
-
+import React from 'react';
+import Login from './Login';
 function App() {
   return (
     <div>
-      <h1>Welcome to React Web.</h1>
+      <Login></Login>
     </div>
   );
 }
-console.log(2232);
 
 export default App;
