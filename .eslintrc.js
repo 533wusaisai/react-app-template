@@ -27,6 +27,7 @@ module.exports = {
   plugins: ["@typescript-eslint", "react"],
   rules: {
     "react/jsx-use-react": 0, // React V17开始JSX已经不再需要引入React
+    "@typescript-eslint/no-explicit-any": ["off"], // 把他加上重启项目就行了
     // "react/react-in-jsx-scope": 0, // 同上
     // "import/first": 0, // 消除绝对路径必须要在相对路径前引入，
     // "no-mixed-spaces-and-tabs": 2, // 禁止空格和 tab 的混合缩进
