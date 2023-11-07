@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 // import eslint from 'vite-plugin-eslint'
 import { visualizer } from 'rollup-plugin-visualizer';
 
-import { resolve } from 'path';
+import path from 'path';
 
 export default defineConfig({
   base: './',
@@ -11,8 +11,8 @@ export default defineConfig({
   resolve: {
     // 配置路径别名
     alias: {
-      '@': resolve(__dirname, 'src'),
+      '@': path.resolve(__dirname, 'src'),
     },
   },
-  server: {}
+  server: {},
 });

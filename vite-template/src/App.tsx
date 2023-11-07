@@ -1,10 +1,13 @@
 import React from 'react';
-import Login from './Login';
+import { BrowserRouter } from 'react-router-dom';
+import WraperRoutes from './router';
+import '@/assets/styles/reset.less';
+
 function App() {
   return (
-    <div>
-      <Login></Login>
-    </div>
+    <BrowserRouter>
+      <WraperRoutes />
+    </BrowserRouter>
   );
 }
 
