@@ -1,0 +1,1 @@
+.login{position:relative;display:flex;height:100vh}.login .left{width:50vw;background-color:#faebd7}.login .right{width:50vw;background-color:#7fffd4}.login .center{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)}

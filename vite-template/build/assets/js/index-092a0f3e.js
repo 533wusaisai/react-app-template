@@ -1,0 +1,1 @@
+import{j as e,O as s}from"./index-cf8021f5.js";const t=()=>(console.log({VITE_PROJECT_ENV:"development",VITE_APP_TITLE:"development",BASE_URL:"./",MODE:"development",DEV:!1,PROD:!0,SSR:!1}),e.jsxs(e.Fragment,{children:["Home",e.jsx("progress",{value:"22",max:"100"}),e.jsx(s,{})]}));export{t as default};

@@ -9,7 +9,7 @@ import type {
 } from 'axios';
 
 const service: AxiosInstance = Axios.create({
-  baseURL: '/API',
+  baseURL: '/api',
   timeout: 30000,
 });
 
