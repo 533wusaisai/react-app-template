@@ -7,6 +7,7 @@ import type {
   AxiosResponse,
   InternalAxiosRequestConfig,
 } from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const service: AxiosInstance = Axios.create({
   baseURL: '/api',
@@ -16,9 +17,12 @@ const service: AxiosInstance = Axios.create({
 // 请求拦截器
 service.interceptors.request.use(
   (config: InternalAxiosRequestConfig) => {
-    const token = 'TOKEN';
+    const token = '';
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;
+    } else {
+      const navigate = useNavigate();
+      navigate('/404');
     }
     return config;
   },
