@@ -1,4 +1,9 @@
 **/node_modules
 **/package-lock.json
 **/pnpm-lock.json
+**/dist
+**/json
 node_modules
+pnpm-lock.yaml
+node_modules
+yarna.lock

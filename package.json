@@ -26,10 +26,13 @@
     "eslint-plugin-react": "^7.33.2",
     "lint-staged": "^15.0.2"
   },
-
   "lint-staged": {
-    "*.{ts,vue}": [
-      "eslint --fix"
+    "src/**/*.{js,jsx,ts,tsx,json}": [
+      "prettier --write",
+      "eslint  --fix"
+    ],
+    "*.md": [
+      "prettier --write"
     ]
   }
 }
